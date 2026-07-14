@@ -550,23 +550,26 @@
     .event-row.unlocking { animation: unlockFlash 1.2s ease forwards; }
 
     @media (max-width: 600px) {
-      .poster { width: 100%; border: 0; }
-      .fixed-nav { top: 10px; left: 10px; }
-      .poster-header { padding: 78px 20px 28px; min-height: 580px; }
-      .stat-grid { grid-template-columns: 1fr; }
-      .day-label, .day-countdown-banner, .mission-deck, .schedule-notice, .poster-footer { padding-left: 18px; padding-right: 18px; }
-      .event-row { grid-template-columns: 68px 1fr; }
+      .poster { width: 100%; border: 0; box-shadow: none; }
+      .poster-header { padding: 72px 18px 24px; min-height: auto; }
+      .header-title { font-size: clamp(36px, 12vw, 64px); letter-spacing: -2px; }
+      .stat-grid { grid-template-columns: 1fr; gap: 8px; }
+      .day-label { padding: 18px; gap: 10px; }
+      .day-label-accent { font-size: 20px; }
+      .day-countdown-banner { padding: 18px; }
+      .dcb-num { font-size: 40px; }
+      .event-row { grid-template-columns: 1fr; min-height: auto; }
+      .time-col { padding: 14px 18px 4px; }
+      .time-value { font-size: 22px; }
+      .event-col { padding: 4px 18px 14px; }
+      .event-divider { display: none; }
       .tminus-col { display: none; }
-      .cards { grid-template-columns: 1fr; }
-      .section-head { display: block; }
-      .section-code { display: block; margin-top: 8px; }
-      
-      
-  
-    
-    
-
-    
+      .event-name { font-size: 15px; }
+      .lc-timer { gap: 3px; }
+      .lc-num { font-size: 36px; }
+      .lc-colon { font-size: 24px; padding-bottom: 10px; }
+      .lc-seg { min-width: 40px; }
+      .schedule-notice, .poster-footer { padding-left: 18px; padding-right: 18px; }
     }
 
     
